@@ -9,11 +9,14 @@
     <style>
         #slika {
             border: 20px solid yellow;
-            padding: 10px;
+            padding: 20px;
+            padding-top: 50px;
         }
         #plavi-tekst {
     color: rgb(207, 42, 42);
-}
+        }
+    .crveniluk {background-color: rgb(26, 133, 133);}
+
     </style>
 </head>
 <body>
@@ -34,15 +37,17 @@ razmak između slike i bordera tzv. padding 10 px -->
 <!-- Naslov sastojci i lista sastojaka trebaju biti u zajedničkom div elementu
 Boja pozadine naslova i satojaka treba biti aqua
 Boja treba biti definirana kroz inline način dodavanja css-a i desnuj marginu 50% -->
-<div style="background-color:aqua; margin-right: 50%;">
+<div class="crveni luk" >
    
     <h2>Sastojci</h2>
     <ul>
+     
         <li>1,5 kg telećih rebra</li>
-        <li>začini po želji (npr.vegeta, sol, biber, majčina dušica, đumbir u prahu, mljev.crvena paparika...)
+        <li>začini po želji (npr.vegeta, sol, biber, majčina dušica, <span class="djumbir">đumbir u prahu</span>, mljev.crvena paparika...)
         </li>
         <li>1,5 kg krumpira</li>
-        <li>mrkva, korijen celera, veća glavica crvenog luka
+        
+        <li>mrkva, korijen celera, veća <span class="crveniluk">glavica crvenog luka</span>
         </li>
         <li>maslinovo ulje
         </li>
@@ -51,8 +56,7 @@ Boja treba biti definirana kroz inline način dodavanja css-a i desnuj marginu 5
      
     </ul>
 </div>
-
-<!-- Nakon div elementa treba doći crta preko cijelog ekrana -->
+!-- Nakon div elementa treba doći crta preko cijelog ekrana -->
 <hr>
 <!-- prva riječ u listi pripreme treba imati pozadinsku boju crvenu
 to napraviti kroz span element u datoteci style.css -->
